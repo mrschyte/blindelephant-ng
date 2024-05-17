@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "blindelephant-ng"
+version = "0.1.0"
+description = ""
+authors = ["Peter Kasza <peter.kasza@itinsight.hu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+xxhash = "^3.4.1"
+attrs = "^23.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+mypy = "^1.10.0"
+types-requests = "^2.31.0.20240406"
+
+[tool.poetry.scripts]
+mypy = "mypy.__main__:console_entry"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
